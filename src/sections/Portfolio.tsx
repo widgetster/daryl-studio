@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { designs, videos } from '../data/portfolio'
+import { StackBar } from './TechStack'
 
 type Preview = { title: string; slug: string; kind: 'design' | 'video' }
 
@@ -20,8 +21,9 @@ export default function Portfolio() {
       <section aria-labelledby="design-title">
         <div className="section-heading">
           <h2 id="design-title">Graphic design</h2>
-          <p>Patient-facing graphics for Pinoy Dental Care in Daegu, designed in Canva.</p>
+          <p>Dental clinic graphics for Pinoy Dental Care - Daegu.</p>
         </div>
+        <StackBar id="design-software" title="SOFTWARE" items={[['Canva', 'C', 'canva']]} />
         <ul className="media-grid design-grid">
           {designs.map((design) => (
             <li key={design.slug}>
@@ -53,8 +55,9 @@ export default function Portfolio() {
       <section aria-labelledby="video-title">
         <div className="section-heading">
           <h2 id="video-title">Video editing</h2>
-          <p>Short videos about city life and everyday moments, edited in DaVinci Resolve.</p>
+          <p>Short-form videos about city life and everyday moments.</p>
         </div>
+        <StackBar id="video-software" title="SOFTWARE" items={[['DaVinci Resolve', 'DR', 'resolve']]} />
         <ul className="media-grid video-grid">
           {videos.map((video) => (
             <li key={video.slug}>

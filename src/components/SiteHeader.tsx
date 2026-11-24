@@ -5,7 +5,7 @@ export default function SiteHeader() {
         <a className="brand" href="#top"><span className="brand-mark" aria-hidden="true">D</span>Daryl<span className="brand-studio">Studio</span></a>
         <nav aria-label="Main navigation">
           <a className="nav-work" href="#work">Projects</a>
-          <a href="#stack">Tech stack</a>
+          <a href="#stack">Built using</a>
           <a href="#creative">Creative work</a>
         </nav>
       </div>

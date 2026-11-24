@@ -119,6 +119,8 @@ nav a:hover, .footer-inner a:hover { color: #fff; }
 .tech-mark.html { color: #ffc3a8; background: #412a36; }
 .tech-mark.js { color: #ffe49a; background: #3a3427; }
 .tech-mark.react { color: #91ebfb; background: #18374a; font-size: 1.1rem; }
+.tech-mark.canva { color: #9de9ef; background: #1c3b4c; }
+.tech-mark.resolve { color: #dfc5ff; background: #352b54; }
 .work { padding-block: 70px 82px; }
 .section-heading { margin-bottom: 24px; }
 .section-heading h2 { font-size: clamp(2rem, 4.4vw, 3.3rem); line-height: 1.05; letter-spacing: -.06em; }
