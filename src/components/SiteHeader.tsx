@@ -6,6 +6,7 @@ export default function SiteHeader() {
         <nav aria-label="Main navigation">
           <a className="nav-work" href="#work">Projects</a>
           <a href="#stack">Tech stack</a>
+          <a href="#creative">Creative work</a>
         </nav>
       </div>
     </header>

@@ -75,6 +75,87 @@ nav a:hover, .footer-inner a:hover { color: #fff; }
 .project-info a:hover, .footer-inner a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .site-footer { border-top: 1px solid #19243c; }
 .footer-inner { color: #c0cce2; font-size: .9rem; }
+
+.creative-work { padding-bottom: 82px; }
+.creative-work section + section { margin-top: 56px; }
+.media-grid {
+  display: grid;
+  gap: 19px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.design-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.video-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.media-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.media-card:focus-visible, .media-preview button:focus-visible { outline: 2px solid var(--mint); outline-offset: 4px; }
+.design-image { display: block; width: 100%; height: auto; }
+.media-title { display: block; padding: 12px 16px; font-weight: 700; }
+.video-thumbnail {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: #080e1d;
+}
+.video-thumbnail img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.play-icon {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: #08142b;
+  background: #d5e5ff;
+}
+.play-icon::after {
+  width: 12px;
+  height: 14px;
+  margin-left: 2px;
+  background: currentColor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  content: '';
+}
+.media-preview {
+  width: min(760px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: inherit;
+  background: #101a2e;
+}
+.media-preview::backdrop { background: #050914da; }
+.preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+}
+.preview-header h2 { font-size: 1.15rem; }
+.preview-header button { color: inherit; background: transparent; font-family: inherit; cursor: pointer; }
+.preview-header button:hover { background: #15223e; }
+.media-preview img, .media-preview video {
+  display: block;
+  width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  background: #080e1d;
+}
+
 @media (max-width: 800px) {
   .shell { width: calc(100% - 48px); }
   .hero { min-height: 390px; gap: 10px; padding-block: 45px; }
@@ -92,4 +173,10 @@ nav a:hover, .footer-inner a:hover { color: #fff; }
   .work { padding-block: 47px 52px; }
   .projects { grid-template-columns: 1fr; gap: 14px; }
   .cover { min-height: 150px; }
+  .creative-work { padding-bottom: 52px; }
+  .creative-work section + section { margin-top: 42px; }
+  .media-grid { gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 440px) {
+  .header-inner { flex-wrap: wrap; gap: 8px 16px; padding-block: 12px; }
 }

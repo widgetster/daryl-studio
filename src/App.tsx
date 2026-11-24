@@ -1,6 +1,7 @@
 import SiteFooter from './components/SiteFooter'
 import SiteHeader from './components/SiteHeader'
 import Hero from './sections/Hero'
+import Portfolio from './sections/Portfolio'
 import Projects from './sections/Projects'
 import TechStack from './sections/TechStack'
 import './App.css'
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <TechStack />
         <Projects />
+        <Portfolio />
       </main>
       <SiteFooter />
     </>

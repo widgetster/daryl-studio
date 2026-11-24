@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero-copy">
         <p className="eyebrow"><span aria-hidden="true" /> FRONTEND PORTFOLIO</p>
         <h1 id="intro">Hi, I’m Daryl.<br /><em>I build for the web.</em></h1>
-        <p className="intro">Explore my frontend projects and the technologies I use to build them.</p>
+        <p className="intro">Explore my frontend projects, graphic designs, and video edits.</p>
         <div className="hero-actions">
           <a className="button primary" href="#work">Explore projects</a>
           <a className="button secondary" href="https://github.com/widgetster" target="_blank" rel="noopener noreferrer">GitHub</a>
