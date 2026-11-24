@@ -1,12 +1,14 @@
 import { projects } from '../data/projects'
+import TechStack from './TechStack'
 
 export default function Projects() {
   return (
     <section className="work" id="work" aria-labelledby="work-title">
       <div className="section-heading">
         <h2 id="work-title">Selected projects<span>.</span></h2>
-        <p>Explore the published websites below.</p>
+        <p>Live websites I designed and built.</p>
       </div>
+      <TechStack />
       <div className="projects">
         {projects.map(({ name, url, artwork, mark }) => (
           <article className="project" key={url}>

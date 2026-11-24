@@ -1,31 +1,36 @@
-import { projects } from '../data/projects'
+const disciplines = [
+  { title: 'Robotics', icon: 'robotics' },
+  { title: 'Graphic design', icon: 'graphic' },
+  { title: 'Video editing', icon: 'video' },
+  { title: 'Web design', icon: 'web' },
+]
 
 export default function Hero() {
   return (
     <section className="hero" aria-labelledby="intro">
       <div className="hero-copy">
-        <p className="eyebrow"><span aria-hidden="true" /> FRONTEND PORTFOLIO</p>
-        <h1 id="intro">Hi, I’m Daryl.<br /><em>I build for the web.</em></h1>
-        <p className="intro">Explore my frontend projects, graphic designs, and video edits.</p>
+        <p className="eyebrow"><span aria-hidden="true" /> PERSONAL PORTFOLIO</p>
+        <h1 id="intro">Hi, I’m Daryl.<br /><em>Engineer &amp; creative.</em></h1>
+        <p className="intro">I’m a full-time robotics engineer, working 9 a.m. to 6 p.m. Outside work, I’m building a portfolio in graphic design, video editing, and web design.</p>
+        <p className="intro">I want my work to make information easier to understand, stories easier to follow, and websites easier to use.</p>
         <div className="hero-actions">
-          <a className="button primary" href="#work">Explore projects</a>
-          <a className="button secondary" href="https://github.com/widgetster" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a className="button primary" href="#work">Explore my work</a>
         </div>
       </div>
       <div className="hero-art" aria-hidden="true">
         <div className="orbit orbit-outer" /><div className="orbit orbit-inner" />
         <i className="orbit-dot dot-top" /><i className="orbit-dot dot-bottom" />
-        <div className="code-window">
-          <div className="window-top"><i /><i /><i /><span>portfolio.tsx</span></div>
-          <div className="window-code">
-            <div><b>01</b><span className="syntax-purple">const</span> portfolio = {'{'}</div>
-            <div><b>02</b>&nbsp; name: <span className="syntax-mint">'Daryl'</span>,</div>
-            <div><b>03</b>&nbsp; focus: <span className="syntax-mint">'Frontend'</span>,</div>
-            <div><b>04</b>&nbsp; projects: <span className="syntax-blue">{projects.length}</span>,</div>
-            <div><b>05</b>{'}'}</div>
-          </div>
+        <div className="profile-window">
+          <div className="window-top"><i /><i /><i /><span>Daryl Studio</span></div>
+          <ul className="profile-grid">
+            {disciplines.map(({ title, icon }) => (
+              <li className="profile-tile" key={title}>
+                <span className={`profile-icon ${icon}-icon`} />
+                <span>{title}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="floating-code">&lt;/&gt;</div>
       </div>
     </section>
   )

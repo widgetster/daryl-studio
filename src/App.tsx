@@ -3,7 +3,6 @@ import SiteHeader from './components/SiteHeader'
 import Hero from './sections/Hero'
 import Portfolio from './sections/Portfolio'
 import Projects from './sections/Projects'
-import TechStack from './sections/TechStack'
 import './App.css'
 
 export default function App() {
@@ -13,7 +12,6 @@ export default function App() {
       <SiteHeader />
       <main id="main" className="shell">
         <Hero />
-        <TechStack />
         <Projects />
         <Portfolio />
       </main>
