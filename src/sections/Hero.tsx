@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="hero-copy">
         <p className="eyebrow"><span aria-hidden="true" /> PERSONAL PORTFOLIO</p>
         <h1 id="intro">Hi, I’m Daryl.<br /><em>Engineer &amp; creative.</em></h1>
-        <p className="intro">I’m a full-time robotics engineer, working 9 a.m. to 6 p.m. Outside work, I’m building a portfolio in graphic design, video editing, and web design.</p>
+        <p className="intro">By day, I’m a full-time robotics engineer. By night, I’m building a portfolio in graphic design, video editing, and web design.</p>
         <p className="intro">I want my work to make information easier to understand, stories easier to follow, and websites easier to use.</p>
         <div className="hero-actions">
           <a className="button primary" href="#work">Explore my work</a>
