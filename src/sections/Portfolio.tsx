@@ -18,7 +18,7 @@ export default function Portfolio() {
 
   return (
     <div className="creative-work" id="creative">
-      <section aria-labelledby="design-title">
+      <section id="graphic-design" aria-labelledby="design-title">
         <div className="section-heading">
           <h2 id="design-title">Graphic design</h2>
           <p>Dental clinic graphics for Pinoy Dental Care - Daegu.</p>
@@ -52,7 +52,7 @@ export default function Portfolio() {
         </ul>
       </section>
 
-      <section aria-labelledby="video-title">
+      <section id="video-editing" aria-labelledby="video-title">
         <div className="section-heading">
           <h2 id="video-title">Video editing</h2>
           <p>Short-form videos about city life and everyday moments.</p>

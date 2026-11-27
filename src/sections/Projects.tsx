@@ -5,8 +5,8 @@ export default function Projects() {
   return (
     <section className="work" id="work" aria-labelledby="work-title">
       <div className="section-heading">
-        <h2 id="work-title">Selected projects<span>.</span></h2>
-        <p>Live websites I designed and built.</p>
+        <h2 id="work-title">Web development<span>.</span></h2>
+        <p>Front-end websites designed and built.</p>
       </div>
       <TechStack />
       <div className="projects">

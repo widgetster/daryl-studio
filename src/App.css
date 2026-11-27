@@ -12,7 +12,8 @@
 .brand { display: inline-flex; align-items: center; gap: 4px; font-size: 1.08rem; font-weight: 750; letter-spacing: -.03em; }
 .brand-mark { display: grid; place-items: center; width: 33px; aspect-ratio: 1; margin-right: 6px; border-radius: 9px; color: #08142b; background: #82aaff; font-weight: 850; }
 .brand-studio, nav a, .footer-inner a { color: var(--muted); }
-nav { display: flex; gap: clamp(14px, 4vw, 32px); font-size: .9rem; font-weight: 600; }
+nav { display: flex; flex: 0 0 auto; flex-wrap: wrap; max-width: 100%; gap: 8px clamp(14px, 4vw, 32px); font-size: .9rem; font-weight: 600; }
+nav a { white-space: nowrap; }
 nav a:hover, .footer-inner a:hover { color: #fff; }
 .hero { display: grid; grid-template-columns: 1.22fr 1fr; align-items: center; gap: 24px; min-height: 470px; padding-block: 60px; }
 .eyebrow, .stack h3 { color: #a9c4ff; font-size: .875rem; font-weight: 750; letter-spacing: .15em; }
@@ -235,7 +236,7 @@ nav a:hover, .footer-inner a:hover { color: #fff; }
 }
 @media (max-width: 600px) {
   .shell { width: calc(100% - 32px); }
-  .header-inner { min-height: 62px; }
+  .header-inner { flex-wrap: wrap; min-height: 62px; }
   .hero { grid-template-columns: 1fr; gap: 18px; padding-block: 45px 20px; }
   .hero-art { width: min(100%, 430px); justify-self: center; height: 220px; }
   .profile-grid { padding: 8px; }
